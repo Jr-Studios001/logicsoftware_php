@@ -6,24 +6,10 @@
     <div class="container px-4 px-lg-5 mt-4">
         <div class="row">
             <div class="col-md-8 mb-3">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar productos..."
-                        aria-label="Buscar productos" name="search" value="{{request('search')}}">
-                    <button class="btn btn-outline-dark" type="submit" id="searchButton">
-                        <i class="bi bi-search"></i> Buscar
-                    </button>
-                </div>
+
             </div>
             <div class="col-md-4 mb-3">
-                <div class="input-group">
-                    <label class="input-group-text" for="sortSelect">Ordenar por:</label>
-                    <select class="form-select" id="sortSelect" name="sort">
-                        <option value="priceAsc" {{ request('sort') == 'priceAsc' ? 'selected' : '' }}>Precio: menor a
-                            mayor</option>
-                        <option value="priceDesc" {{ request('sort') == 'priceDesc' ? 'selected' : '' }}>Precio: mayor a
-                            menor</option>
-                    </select>
-                </div>
+
             </div>
         </div>
     </div>

@@ -27,13 +27,7 @@
                 </li>
 
             </ul>
-            <a href="{{route('carrito.mostrar')}}" class="btn btn-outline-dark">
-                <i class="bi-cart-fill me-1"></i>
-                Pedido
-                <span class="badge bg-dark text-white ms-1 rounded-pill">
-                {{ session('carrito') ? array_sum(array_column(session('carrito'), 'cantidad')) : 0 }}
-                </span>
-            </a>
+
         </div>
     </div>
 </nav>
